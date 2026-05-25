@@ -22,7 +22,7 @@ Then open the local Vite URL shown in your terminal.
 
 ## Next build steps
 
-- Add Supabase Auth and restrict access to your email
+- Add Supabase Auth and restrict access to select emails
 - Add Postgres database persistence
 - Add real backend job-posting extraction
 - Add drag-and-drop card movement
