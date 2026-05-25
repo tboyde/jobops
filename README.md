@@ -1,4 +1,4 @@
-# JobOps — Neya's Career Command Center
+# JobOps — AI Career Command Center
 
 A private starter React app for tracking job applications in a Jira-style workflow.
 
