@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JobOps — Mission control for your career</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://api.fontshare.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              ink: "#1F2329",
+              rail: "#1B1F24",
+              panel: "#2B3138",
+              edge: "#3A424C",
+              field: "#252B32",
+              fg: "#F5F7FA",
+              muted: "#A7B0BA",
+              neon: {
+                DEFAULT: "#B7FF3C",
+                hover: "#A3F635",
+                soft: "#D9FF88",
+                pale: "#EFFFBE",
+              },
+              status: {
+                apply: "#64748B",
+                progress: "#38BDF8",
+                review: "#F59E0B",
+                done: "#22C55E",
+              },
+            },
+            fontFamily: {
+              display: ["Satoshi", "Inter", "system-ui", "sans-serif"],
+              sans: ["Inter", "system-ui", "sans-serif"],
+            },
+            borderRadius: {
+              card: "20px",
+              modal: "24px",
+              btn: "16px",
+              input: "16px",
+            },
+            boxShadow: {
+              card: "0 1px 2px rgba(0,0,0,0.3), 0 8px 24px -12px rgba(0,0,0,0.4)",
+              lift: "0 6px 24px -8px rgba(0,0,0,0.5)",
+              focus: "0 0 0 3px rgba(183,255,60,0.15)",
+            },
+            transitionDuration: {
+              200: "200ms",
+            },
+            keyframes: {
+              float: {
+                "0%, 100%": { transform: "translateY(0)" },
+                "50%": { transform: "translateY(-14px)" },
+              },
+            },
+            animation: {
+              float: "float 4.5s ease-in-out infinite",
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      html,
+      body {
+        background: #1f2329;
+        color: #f5f7fa;
+        font-family: "Inter", system-ui, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      h1,
+      h2,
+      h3,
+      h4 {
+        font-family: "Satoshi", "Inter", sans-serif;
+        letter-spacing: -0.01em;
+      }
+      ::selection {
+        background: rgba(183, 255, 60, 0.25);
+        color: #f5f7fa;
+      }
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #3a424c;
+        border-radius: 8px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #4a525c;
+      }
+    </style>
+  </head>
+  <body class="bg-ink text-fg">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
